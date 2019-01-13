@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'change-ip', loadChildren: './change-ip/change-ip.module#ChangeIPPageModule' },
   { path: 'send', loadChildren: './send/send.module#SendPageModule' },
   { path: 'finish', loadChildren: './finish/finish.module#FinishPageModule' },
+  { path: 'error', loadChildren: './error/error.module#ErrorPageModule' },
 ];
 
 @NgModule({

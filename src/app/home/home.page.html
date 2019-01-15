@@ -1,12 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      WAH-4Patients
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://beta.ionicframework.com/docs/">docs</a> will be your guide.</p>
+ <ion-card class="card">
+    <p id="LGU" class="LGU">{{service.LGU_name}}</p>
+  </ion-card>
+
+  <div id="standby">
+    <img class="animation" alt="spasms animation" src="assets/imgs/smsstandby.gif">
+    <h6 text-left>Server IP Address:</h6> 
+    <div>
+    <ion-card class="card2" float-left>
+      <p class="ip" text-center>{{service.ip_Address}}</p>
+    </ion-card>
+    <button float-left class="change" ion-button icon-left (click)="service.onIpChange()">
+      <ion-icon name="settings"></ion-icon>
+      Change
+    </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h5>WAH-4P is waiting for new messages <br>from server at {{service.ip_Address}}</h5> 
+    
+  </div>
 </ion-content>

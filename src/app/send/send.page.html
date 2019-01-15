@@ -1,9 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>send</ion-title>
+    <ion-title>WAH-4Patients</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+	 <ion-card class="card">
+    <p id="LGU" class="LGU">{{service.LGU_name}}</p>
+  </ion-card>
+<div id="sending" class="hidden">
+    <img class="animation" alt="spasms animation" src="assets/imgs/smssending.gif">
+    <h5>WAH-4P is sending messages</h5>
+ 
+    <div class="progress-outer">
+      <div class="progress-inner" [style.width]="service.progress + '%'">
+          {{service.progress}}%
+      </div>
+    </div>
+    <h6>{{service.finished_Messages}} out of {{service.total_Messages}} finished</h6>
+    <div id="disconnected" class="hidden">
+      <h6 class="redtext">The server cannot be reached</h6>
+    </div>
+    <br>
+   <!--  <button ion-button icon-left class="stop" (click)="service.showStopped()">
+      <ion-icon name="square" ></ion-icon>
+      Stop
+    </button> -->
+  </div>
 
 </ion-content>

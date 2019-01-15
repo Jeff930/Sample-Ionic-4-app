@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Error</ion-title>
+    <ion-title>WAH-4Patients</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+<ion-card class="card">
+    <p id="LGU" class="LGU">{{service.LGU_name}}</p>
+  </ion-card>
 
+   <div id="stopped" class="hidden">
+    <img class="animation" alt="spasms animation" src="assets/imgs/smsstopped.png">
+    <h5>WAH-4P service has stopped</h5>
+    <h6>please press the Start button to <br>resume the service</h6>
+    <br>
+    <button ion-button icon-left class="start" (click)="showError()">
+      <ion-icon name="play"></ion-icon>
+      Start
+      </button>
+  </div>
 </ion-content>

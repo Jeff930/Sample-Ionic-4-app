@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>changeIP</ion-title>
+    <ion-title>WAH-4Patients</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+<div id="ipChange" class="hidden">
+    <br>
+    <h6 text-left>Server IP Address:</h6> 
+    <div>
 
+    <ion-card float-left>
+       <ion-input text-center  [(ngModel)]="service.temp_Address" placeholder="{{service.ip_Address}}"></ion-input>
+    </ion-card>
+    </div>
+    <br>
+    <br>
+    <button ion-button icon-left class="change red" (click)="service.onIpCancel()"> 
+      <ion-icon name="done-all"></ion-icon>
+      Cancel
+    </button>
+    <button ion-button icon-left class="change green" (click)="service.onIpSave()"> 
+      <ion-icon name="done-all"></ion-icon>
+      Save
+    </button>
+  </div>
 </ion-content>

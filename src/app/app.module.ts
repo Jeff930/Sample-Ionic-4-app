@@ -14,9 +14,10 @@ import { ChangeIPPageModule } from './change-ip/change-ip.module';
 import { ErrorPageModule } from './error/error.module';
 import { FinishPageModule } from './finish/finish.module';
 import { SendPageModule } from './send/send.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent],
   entryComponents: [
     HomePageModule,
     ChangeIPPageModule,

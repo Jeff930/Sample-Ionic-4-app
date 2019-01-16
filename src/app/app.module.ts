@@ -10,14 +10,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HomePageModule } from './home/home.module';
-import { ChangeIPPageModule } from './change-ip/change-ip.module'
+import { ChangeIPPageModule } from './change-ip/change-ip.module';
+import { ErrorPageModule } from './error/error.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [
     HomePageModule,
     ChangeIPPageModule,
-    
+    ErrorPageModule,
+
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

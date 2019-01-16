@@ -13,7 +13,7 @@ import { HomePageModule } from './home/home.module';
 import { ChangeIPPageModule } from './change-ip/change-ip.module';
 import { ErrorPageModule } from './error/error.module';
 import { FinishPageModule } from './finish/finish.module';
-//import { SendPageModule } from './send/send.module';
+import { SendPageModule } from './send/send.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +22,7 @@ import { FinishPageModule } from './finish/finish.module';
     ChangeIPPageModule,
     ErrorPageModule,
     FinishPageModule,
-    //SendPageModule,
+    SendPageModule,
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

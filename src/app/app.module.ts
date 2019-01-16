@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './home/home.module';
 import { ChangeIPPageModule } from './change-ip/change-ip.module';
 import { ErrorPageModule } from './error/error.module';
+import { FinishPageModule } from './finish/finish.module';
+//import { SendPageModule } from './send/send.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +21,8 @@ import { ErrorPageModule } from './error/error.module';
     HomePageModule,
     ChangeIPPageModule,
     ErrorPageModule,
-
+    FinishPageModule,
+    //SendPageModule,
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
